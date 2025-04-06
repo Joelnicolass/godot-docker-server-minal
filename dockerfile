@@ -97,3 +97,23 @@ CMD ["./server.x86_64", "--server"]
 
 # eliminar imagenes
 # docker rmi $(docker images -a -q)
+
+
+
+#pull sh
+#docker pull joelnicolass/mi-godot-server:latest
+
+#logs
+#docker ps
+#docker logs godot-server
+
+# run in sh
+#docker run -d \
+#  --name godot-server \
+#  -p 7777:7777/udp \
+#  joelnicolass/mi-godot-server:latest
+
+# eliminar
+#docker stop godot-server
+#docker rm godot-server
+#docker rmi joelnicolass/mi-godot-server:latest
