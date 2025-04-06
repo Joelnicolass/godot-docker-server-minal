@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://bdjmdmwl44exr"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_7dm0k"]
+
+[sub_resource type="Sky" id="Sky_ig7tw"]
+sky_material = SubResource("ProceduralSkyMaterial_7dm0k")
+
+[sub_resource type="Environment" id="Environment_0xm2m"]
+background_mode = 2
+sky = SubResource("Sky_ig7tw")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7dm0k"]
+albedo_color = Color(1, 0, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_0xm2m")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.50776, 0.673387, 0.537336, -0.462496, 0.73929, -0.489435, -0.726826, 0, 0.686821, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_7dm0k")
+mesh = SubResource("BoxMesh_ig7tw")
+skeleton = NodePath("../WorldEnvironment")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.919314, 0.393525, 0, -0.393525, 0.919314, 0, 0.697947, 1.61363)
