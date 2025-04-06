@@ -4,7 +4,7 @@ const FLAG_HEADLESS: String = "headless"
 const FLAG_DEDICATED_SERVER: String = "dedicated_server"
 const PORT: int = 7777
 const MAX_CLIENTS: int = 16
-const IP_SERVER: String = "127.0.0.1"
+const IP_SERVER: String = "155.138.200.225"
 
 @onready var menu_hud: Control = $Menu
 @onready var player_spawner: MultiplayerSpawner = $PlayerSpawner

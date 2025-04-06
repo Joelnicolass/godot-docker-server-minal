@@ -86,3 +86,14 @@ CMD ["./server.x86_64", "--server"]
 #  -p 127.0.0.1:7777:7777/udp \                                       
 #  --name servidor-godot \
 #  mi-godot-server:4.4.1
+
+# push image to docker hub
+# docker tag mi-godot-server:4.4.1 joelnicolass/mi-godot-server:latest
+# docker push joelnicolass/mi-godot-server:latest
+# docker buildx build --platform linux/amd64 -t joelnicolass/mi-godot-server:latest --push .
+
+# eliminar contenedores
+# docker rm $(docker ps -a -q)
+
+# eliminar imagenes
+# docker rmi $(docker images -a -q)
