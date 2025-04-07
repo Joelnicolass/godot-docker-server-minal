@@ -88,9 +88,9 @@ CMD ["./server.x86_64", "--server"]
 #  mi-godot-server:4.4.1
 
 # push image to docker hub
+# docker buildx build --platform linux/amd64 -t joelnicolass/mi-godot-server:latest --push .
 # docker tag mi-godot-server:4.4.1 joelnicolass/mi-godot-server:latest
 # docker push joelnicolass/mi-godot-server:latest
-# docker buildx build --platform linux/amd64 -t joelnicolass/mi-godot-server:latest --push .
 
 # eliminar contenedores
 # docker rm $(docker ps -a -q)
