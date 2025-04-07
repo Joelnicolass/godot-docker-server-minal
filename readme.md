@@ -109,6 +109,15 @@ docker ps
 docker logs -f nombre-servidor
 ```
 
+### 9. Configuración de firewall
+
+```bash
+# Permitir tráfico UDP en el puerto 7777
+sudo ufw status
+# Si está inactivo, habilitarlo
+sudo ufw allow 7777/udp
+```
+
 ---
 
 ## 🔄 Sustituir valores genéricos
